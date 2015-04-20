@@ -8,6 +8,13 @@
 
 using namespace std;
 
+class node;
+
+/*typedef struct StringReturns {
+	string key;
+	string node;
+};*/
+
 class tree {
 private:
 	node * rootNode;
@@ -15,7 +22,9 @@ public:
 	tree();
 	~tree();
 	string search(string key);
-	void modify(string operation, string key);
+	void add(string key);
+	void remove(string key);
+	void print();
 };
 
 #endif //__TREE__

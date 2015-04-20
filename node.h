@@ -20,19 +20,27 @@ private:
 
 public:
 	node();
+	node(string newKey);
 	~node();
 	node * getRight();
 	void setRight(node * newNode);
 	node * getLeft();
 	void setLeft(node * newNode);
+	node * getParent();
+	void setParent(node * newNode);
+	string getKey();
+	void setKey(string newKey);
 	//Temporary methods until DRT is put in.
 	string getData();
 	void setData(string newData);
 	void addNode(node * newNode);
-	void delNode(node * killNode);
-	void noChildRule();
-	void singleChildRule();
+	void delNode(string killString);
+	//void delNode(node * killNode);
+	//These three should probably return strings...
+	void noChildRule(string inputKey);
+	void singleChildRule(string inputKey);
 	void doubleChildRule();
+	void print();
 };
 
 

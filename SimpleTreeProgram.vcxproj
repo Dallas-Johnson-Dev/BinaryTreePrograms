@@ -66,11 +66,13 @@
   <ItemGroup>
     <ClInclude Include="Database.h" />
     <ClInclude Include="DRT.h" />
+    <ClInclude Include="main.h" />
     <ClInclude Include="node.h" />
     <ClInclude Include="tree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DRT.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="node.cpp" />
     <ClCompile Include="Database.cpp" />
     <ClCompile Include="tree.cpp" />

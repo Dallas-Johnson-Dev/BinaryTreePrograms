@@ -3,9 +3,11 @@
 
 #include <string>
 #include "DRT.h"
+#include "tree.h"
 using namespace std;
 
 class DRT;
+class tree;
 class Database {
 
  public:
